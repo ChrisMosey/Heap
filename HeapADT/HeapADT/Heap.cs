@@ -19,11 +19,17 @@ namespace HeapADT
     {
         int arraySize;
         T[] objArray;
+        int maxNum;
 
         public Heap(int maxNum)
         {
+            if (maxNum > 2000000)
+            {
+                throw new IndexOutOfRangeException();
+            }
             arraySize = 0;
-            objArray = new T[maxNum];
+            objArray = new T[maxNum + 1];
+            this.maxNum = maxNum;
         }
 
         public bool IsEmpty()
@@ -42,10 +48,15 @@ namespace HeapADT
 
         public void Insert(T new_item)
         {
+            if (arraySize >= maxNum)
+            {
+                throw new ArgumentException("Heap is full");
+            }
+
             objArray[++arraySize] = new_item;
 
             int tracer = arraySize;
-            while (tracer > 1 && objArray[tracer / 2].CompareTo(objArray[tracer]) == -1)
+            while (tracer > 1 && objArray[tracer / 2].CompareTo(objArray[tracer]) == 1)
             {
                 exch(tracer, tracer / 2);
                 tracer = tracer / 2;
@@ -73,7 +84,9 @@ namespace HeapADT
                 tracer = x;
             }
 
-            return objArray[arraySize--];
+            T tempObj = objArray[arraySize];
+            objArray[arraySize--] = default(T);
+            return tempObj;
         }
 
         private void exch(int x, int y)

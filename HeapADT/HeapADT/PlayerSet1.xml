@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Roster>
+	<player>
+		<jersey>25</jersey>
+		<Name>Jeff</Name>
+		<Position>Right ChickenWing</Position>
+	</player>
+	<player>
+		<jersey>45</jersey>
+		<Name>Steve</Name>
+		<Position>left ChickenWing</Position>
+	</player>
+	<player>
+		<jersey>34</jersey>
+		<Name>Fred</Name>
+		<Position>Center Goalie</Position>
+	</player>
+	<player>
+		<jersey>65</jersey>
+		<Name>Chris</Name>
+		<Position>Fwd</Position>
+	</player>
+	<player>
+		<jersey>3</jersey>
+		<Name>Donald</Name>
+		<Position>Reverse</Position>
+	</player>
+</Roster>
