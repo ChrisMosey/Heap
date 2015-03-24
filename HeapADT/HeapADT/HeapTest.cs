@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* heapTest.cs
+ * test heap.cs with boook object
+ * 
+ * revision history:
+ *  chris mosey 14.03.2015: created, tested, finished
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -120,7 +127,7 @@ namespace HeapADT
             heap.getMin();
             heap.getMin();
 
-            Assert.AreEqual(heap.getMin(), book1);
+            Assert.AreEqual(heap.getMin(), book4);
         }
     }
 }

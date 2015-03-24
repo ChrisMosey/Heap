@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* SortRosterTest.cs
+ * test SortRoster.cs with player object
+ * 
+ * revision history:
+ *  chris mosey 22.03.2015: created, tested, finished
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

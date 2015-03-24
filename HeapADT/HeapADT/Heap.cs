@@ -71,11 +71,11 @@ namespace HeapADT
             while (2 * tracer <= arraySize - 1)
             {
                 int x = 2 * tracer;
-                if (x < arraySize - 1 && objArray[x].CompareTo(objArray[x + 1]) == -1)
+                if (x < arraySize - 1 && objArray[x].CompareTo(objArray[x + 1]) == 1)
                 {
                     x++;
                 }
-                if (!(objArray[tracer].CompareTo(objArray[x]) == -1))
+                if (!(objArray[tracer].CompareTo(objArray[x]) == 1))
                 {
                     break;
                 }

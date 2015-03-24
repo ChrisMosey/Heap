@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* book.cs
+ * object for book information
+ * 
+ * revision history:
+ *  chris mosey: 20.03.2015: created/finished
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
